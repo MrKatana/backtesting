@@ -2029,8 +2029,179 @@ tbody tr.pas td{color:var(--faint); font-style:italic}
 .dos .cap2{font-size:.78rem; color:var(--muted); margin-top:.3rem}
 @media (max-width:820px){ .dos{grid-template-columns:1fr} .hip2{grid-template-columns:2.4rem 1fr} .hip2 .veredicto{grid-column:2} }
 
+/* ===== e13a · Descorrelación real ===== */
+
+
+
+
+
+
+.page{max-width:var(--wide); margin:0 auto; padding:0 1.5rem 6rem}
+.col{max-width:var(--col); margin-left:auto; margin-right:auto}
+p{margin:0 0 1.1em; color:var(--ink-2)}
+strong{color:var(--ink); font-weight:600}
+h1,h2,h3{font-family:var(--serif); font-weight:600; text-wrap:balance; color:var(--ink); margin:0}
+em,i{font-style:italic}
+.rail{font-family:var(--mono); font-size:.68rem; font-weight:500; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--faint); display:flex; align-items:center; gap:.7rem}
+.rail::after{content:""; flex:1; height:1px; background:var(--rule)}
+.hero{padding:5.5rem 0 3rem; border-bottom:1px solid var(--rule)}
+.kicker{font-family:var(--mono); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--brick); margin-bottom:1.6rem}
+h1{font-size:clamp(2.6rem,7vw,4.6rem); line-height:1.02; letter-spacing:-.022em; font-weight:800}
+h1 .thin{font-weight:400; font-style:italic; color:var(--muted)}
+.standfirst{font-family:var(--serif); font-size:1.24rem; line-height:1.55; color:var(--ink-2);
+  margin-top:1.6rem; max-width:34rem}
+.byline{margin-top:2.4rem; font-family:var(--mono); font-size:.74rem; color:var(--faint); line-height:1.9}
+section{padding:4.2rem 0 0}
+h2{font-size:clamp(1.7rem,3.4vw,2.3rem); line-height:1.13; letter-spacing:-.015em; margin:1.1rem 0 1.1rem}
+h3{font-size:1.13rem; line-height:1.35; margin:2.2rem 0 .6rem; font-weight:600}
+.lede{font-size:1.06rem; color:var(--ink-2)}
+.panel{background:var(--panel); border:1px solid var(--rule); border-radius:4px;
+  padding:1.5rem 1.5rem 1.6rem; margin:2rem auto; box-shadow:var(--shadow); max-width:var(--wide)}
+.panel > .rail{margin-bottom:1.2rem}
+.panel .cap{font-size:.85rem; color:var(--muted); margin:1.1rem 0 0; line-height:1.5}
+.panel .cap b{color:var(--ink-2); font-weight:600}
+.legend{display:flex; gap:1.4rem; flex-wrap:wrap; font-family:var(--mono); font-size:.72rem;
+  color:var(--muted); margin-bottom:1rem}
+.legend span{display:inline-flex; align-items:center; gap:.45rem}
+.swatch{width:.85rem; height:.85rem; border-radius:2px; display:inline-block}
+.hip{border:1px solid var(--rule); border-radius:4px; background:var(--panel); padding:1.2rem 1.3rem;
+  margin:1rem 0; display:grid; grid-template-columns:3.2rem 1fr auto; gap:.4rem 1rem; align-items:start}
+.hip .id{font-family:var(--mono); font-size:.78rem; font-weight:600; color:var(--petrol); padding-top:.15rem}
+.hip .tx{font-size:.95rem; color:var(--ink)}
+.hip .cr{font-family:var(--mono); font-size:.74rem; color:var(--faint); grid-column:2; margin-top:.1rem}
+.veredicto{font-family:var(--mono); font-size:.7rem; letter-spacing:.09em; text-transform:uppercase;
+  padding:.2rem .55rem; border-radius:2px; white-space:nowrap; align-self:start}
+.v-ref{background:var(--brick-soft); color:var(--brick); border:1px solid var(--brick)}
+.v-conf{background:var(--green-soft); color:var(--green); border:1px solid var(--green)}
+.v-par{background:var(--petrol-soft); color:var(--petrol); border:1px solid var(--petrol)}
+.kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--rule);
+  border:1px solid var(--rule); border-radius:4px; overflow:hidden; margin:2rem auto; max-width:var(--wide)}
+.kpi{background:var(--panel); padding:1.2rem 1.2rem 1.3rem}
+.kpi .v{font-family:var(--mono); font-size:1.75rem; font-weight:600; letter-spacing:-.03em; line-height:1.05}
+.kpi .l{font-size:.82rem; color:var(--muted); margin-top:.35rem; line-height:1.4}
+.kpi.g .v{color:var(--green)} .kpi.b .v{color:var(--brick)} .kpi.p .v{color:var(--petrol)}
+.tw{overflow-x:auto; margin:1rem 0 0}
+table{border-collapse:collapse; width:100%; font-size:.86rem; min-width:32rem}
+th,td{text-align:right; padding:.45rem .7rem; border-bottom:1px solid var(--rule)}
+th:first-child,td:first-child{text-align:left}
+thead th{font-family:var(--mono); font-size:.68rem; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--faint); font-weight:500; border-bottom:1px solid var(--rule-strong); white-space:nowrap}
+tbody td{font-variant-numeric:tabular-nums; color:var(--ink-2)}
+tbody tr:hover td{background:var(--panel-2)}
+tbody tr.hi td{background:var(--brick-soft); color:var(--ink)}
+td.neg{color:var(--brick)} td.pos{color:var(--green)}
+td.mono,th.mono{font-family:var(--mono); white-space:nowrap}
+svg{display:block; max-width:100%; height:auto}
+.ax{stroke:var(--rule-strong); stroke-width:1}
+.axl{fill:var(--faint); font-family:var(--mono); font-size:10px}
+.gl{stroke:var(--rule); stroke-width:1; stroke-dasharray:2 3}
+.ficha{margin:2rem auto; max-width:var(--wide); border:1px solid var(--rule); border-radius:4px;
+  background:var(--panel); overflow:hidden}
+.ficha .f{display:grid; grid-template-columns:2rem 13rem 1fr; gap:1rem; padding:.85rem 1.3rem;
+  border-bottom:1px solid var(--rule); font-size:.9rem; align-items:baseline}
+.ficha .f:last-child{border-bottom:0}
+.ficha .nn{font-family:var(--mono); font-size:.72rem; color:var(--faint)}
+.ficha .k{font-weight:600; color:var(--ink); font-size:.86rem}
+.ficha .v{color:var(--ink-2)}
+.finding{display:grid; grid-template-columns:2.6rem 1fr; gap:1.1rem; padding:1.6rem 0;
+  border-top:1px solid var(--rule)}
+.finding .rank{font-family:var(--mono); font-size:.8rem; font-weight:600; color:var(--brick); padding-top:.32rem}
+.finding h3{margin:0 0 .5rem} .finding p{margin:0 0 .6em; font-size:.95rem}
+.finding .lab{font-family:var(--mono); font-size:.66rem; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--faint); display:block; margin-bottom:.15rem}
+.finding .cierre{border-left:2px solid var(--rule-strong); padding-left:.9rem; font-family:var(--serif);
+  font-size:1.02rem; color:var(--ink); margin-top:.9rem}
+.rec{border:1px solid var(--rule); border-radius:4px; background:var(--panel); padding:1.3rem 1.4rem;
+  margin:1.2rem 0}
+.rec .top{display:flex; justify-content:space-between; align-items:baseline; gap:1rem; margin-bottom:.5rem}
+.rec .ex{font-family:var(--mono); font-size:.68rem; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--faint)}
+.rec .pri{font-family:var(--mono); font-size:.66rem; padding:.15rem .5rem; border-radius:2px;
+  border:1px solid var(--green); color:var(--green); white-space:nowrap}
+.rec .pri.m{border-color:var(--petrol); color:var(--petrol)}
+.rec h3{margin:0 0 .6rem; font-size:1.05rem}
+.rec dl{display:grid; grid-template-columns:auto 1fr; gap:.3rem .9rem; margin:0; font-size:.88rem}
+.rec dt{font-family:var(--mono); font-size:.68rem; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--faint); white-space:nowrap; padding-top:.25rem}
+.rec dd{margin:0; color:var(--ink-2)}
+footer{margin-top:4rem; padding:2.2rem 0 0; border-top:1px solid var(--rule);
+  font-size:.85rem; color:var(--muted)}
+footer h3{font-size:1rem; margin:1.6rem 0 .4rem}
+footer ul{margin:0; padding-left:1.1rem} footer li{margin:.3rem 0}
+.disc{margin-top:2.4rem; padding:1rem 1.1rem; border:1px dashed var(--rule-strong);
+  border-radius:3px; font-size:.8rem; color:var(--faint); line-height:1.6}
+@media (max-width:820px){ .kpis{grid-template-columns:1fr 1fr} .ficha .f{grid-template-columns:2rem 1fr} }
+@media (max-width:700px){ .hero{padding:3.5rem 0 2.5rem} section{padding:3rem 0 0} }
+
+.tot td{background:var(--panel-2); font-weight:600; color:var(--ink)}
+tbody tr.hi td{background:var(--green-soft)!important}
+tbody tr.mal td{color:var(--brick)}
+tbody tr.pas td{color:var(--faint); font-style:italic}
+.aviso{border:1px solid var(--petrol); border-left-width:3px; border-radius:4px;
+  background:var(--petrol-soft); padding:1.1rem 1.3rem; margin:1.6rem 0}
+.aviso .h{font-family:var(--mono); font-size:.68rem; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--petrol); margin-bottom:.5rem}
+.aviso p{margin:.4rem 0; font-size:.9rem}
+.aviso.b{border-color:var(--brick); background:var(--brick-soft)} .aviso.b .h{color:var(--brick)}
+.aviso.g{border-color:var(--green); background:var(--green-soft)} .aviso.g .h{color:var(--green)}
+
+/* bloque: cabecera de sección numerada */
+.bloque{font-family:var(--mono); font-size:.68rem; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--brick); margin:0 0 .4rem}
+
+/* resumen ejecutivo: tarjetas de hipótesis */
+.hips{display:grid; gap:.7rem; margin:1.4rem auto; max-width:var(--wide)}
+.hip2{border:1px solid var(--rule); border-radius:4px; background:var(--panel); padding:.95rem 1.2rem;
+  display:grid; grid-template-columns:3rem 1fr auto; gap:.3rem 1rem; align-items:start}
+.hip2 .id{font-family:var(--mono); font-size:.78rem; font-weight:600; color:var(--petrol); padding-top:.15rem}
+.hip2 .tx{font-size:.95rem; color:var(--ink); line-height:1.45}
+.hip2 .cr{grid-column:2; font-size:.84rem; color:var(--muted); line-height:1.45}
+.hip2 .cr b{color:var(--ink-2)}
+.veredicto{font-family:var(--mono); font-size:.68rem; letter-spacing:.09em; text-transform:uppercase;
+  padding:.22rem .55rem; border-radius:2px; white-space:nowrap; align-self:start}
+.v-ref{background:var(--brick-soft); color:var(--brick); border:1px solid var(--brick)}
+.v-conf{background:var(--green-soft); color:var(--green); border:1px solid var(--green)}
+.v-par{background:var(--petrol-soft); color:var(--petrol); border:1px solid var(--petrol)}
+.conclusion{font-family:var(--serif); font-size:1.22rem; line-height:1.5; color:var(--ink);
+  border-left:3px solid var(--brick); padding:.4rem 0 .4rem 1.1rem; margin:1.6rem 0}
+
+/* análisis: nota didáctica */
+.nota{background:var(--panel-2); border-radius:4px; padding:.9rem 1.2rem; margin:1.2rem 0; font-size:.92rem}
+.nota .h{font-family:var(--mono); font-size:.64rem; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--faint); margin-bottom:.35rem}
+.nota p{margin:.3rem 0}
+
+/* medidor de cercanía */
+.medidor{border:1px solid var(--rule); border-radius:4px; background:var(--panel); box-shadow:var(--shadow);
+  padding:1.4rem 1.5rem 1.2rem; margin:1.6rem auto; max-width:var(--wide)}
+.medidor .t{font-family:var(--serif); font-size:1.25rem; font-weight:600; margin:0 0 .2rem}
+.medidor .s{font-size:.88rem; color:var(--muted); margin:0 0 .8rem}
+.desglose{display:grid; grid-template-columns:1fr auto auto; gap:.3rem 1rem; font-size:.86rem; margin-top:1rem}
+.desglose .k{color:var(--ink-2)} .desglose .v{font-family:var(--mono); text-align:right}
+.desglose .d{font-family:var(--mono); text-align:right; color:var(--muted)}
+.desglose .up{color:var(--green); font-weight:600} .desglose .dn{color:var(--brick); font-weight:600}
+.desglose .h{font-family:var(--mono); font-size:.64rem; letter-spacing:.12em; text-transform:uppercase; color:var(--faint)}
+
+/* pasos a seguir */
+.pasos{counter-reset:p; margin:1.4rem auto; max-width:var(--wide); display:grid; gap:.8rem}
+.paso{border:1px solid var(--rule); border-radius:4px; background:var(--panel); padding:1rem 1.2rem 1rem 1.2rem;
+  display:grid; grid-template-columns:2.6rem 1fr; gap:.2rem 1rem}
+.paso .n{font-family:var(--serif); font-size:1.8rem; font-weight:800; color:var(--brick); line-height:1}
+.paso h4{margin:0 0 .3rem; font-size:1.02rem}
+.paso p{margin:0; font-size:.92rem}
+.paso .meta{grid-column:2; font-family:var(--mono); font-size:.72rem; color:var(--faint); margin-top:.4rem}
+
+.dos{display:grid; grid-template-columns:1fr 1fr; gap:1.4rem; margin:1.4rem auto; max-width:var(--wide)}
+.dos > div{border:1px solid var(--rule); border-radius:4px; background:var(--panel); padding:1rem 1.2rem}
+.dos h4{margin:0 0 .5rem; font-size:.9rem}
+.dos .big{font-family:var(--mono); font-size:1.5rem; font-weight:600; letter-spacing:-.02em}
+.dos .cap2{font-size:.78rem; color:var(--muted); margin-top:.3rem}
+@media (max-width:820px){ .dos{grid-template-columns:1fr} .hip2{grid-template-columns:2.4rem 1fr} .hip2 .veredicto{grid-column:2} }
+
 </style>
-<div class="tabbar"><div class="tabbar-in" role="tablist" aria-label="Experimentos"><button class="tab" role="tab" id="e1a-tab" aria-selected="true" aria-controls="e1a-panel" data-panel="e1a-panel"><span class="exp">EXP 1</span><span class="nm">Diez Mil Vidas de un Trader</span></button><button class="tab" role="tab" id="e1b-tab" aria-selected="false" aria-controls="e1b-panel" data-panel="e1b-panel"><span class="exp">EXP 1</span><span class="nm">Diez Veces el Capital</span></button><button class="tab" role="tab" id="e1c-tab" aria-selected="false" aria-controls="e1c-panel" data-panel="e1c-panel"><span class="exp">EXP 1</span><span class="nm">Informe trayectorias</span></button><button class="tab" role="tab" id="e2a-tab" aria-selected="false" aria-controls="e2a-panel" data-panel="e2a-panel"><span class="exp">EXP 2</span><span class="nm">Agentes con los aprendizajes</span></button><button class="tab" role="tab" id="e3a-tab" aria-selected="false" aria-controls="e3a-panel" data-panel="e3a-panel"><span class="exp">EXP 3</span><span class="nm">El mismo motor sobre BTC/USD</span></button><button class="tab" role="tab" id="e3b-tab" aria-selected="false" aria-controls="e3b-panel" data-panel="e3b-panel"><span class="exp">EXP 3</span><span class="nm">Tres bitácoras al azar</span></button><button class="tab" role="tab" id="e4a-tab" aria-selected="false" aria-controls="e4a-panel" data-panel="e4a-panel"><span class="exp">EXP 4</span><span class="nm">Ventanas rodantes sobre BTC</span></button><button class="tab" role="tab" id="e5a-tab" aria-selected="false" aria-controls="e5a-panel" data-panel="e5a-panel"><span class="exp">EXP 5</span><span class="nm">Dirección y régimen</span></button><button class="tab" role="tab" id="e6a-tab" aria-selected="false" aria-controls="e6a-panel" data-panel="e6a-panel"><span class="exp">EXP 6</span><span class="nm">Cincuenta dólares fijos</span></button><button class="tab" role="tab" id="e7a-tab" aria-selected="false" aria-controls="e7a-panel" data-panel="e7a-panel"><span class="exp">EXP 7</span><span class="nm">Tres a la vez</span></button><button class="tab" role="tab" id="e8a-tab" aria-selected="false" aria-controls="e8a-panel" data-panel="e8a-panel"><span class="exp">EXP 8</span><span class="nm">El tamaño de la apuesta</span></button><button class="tab" role="tab" id="e9a-tab" aria-selected="false" aria-controls="e9a-panel" data-panel="e9a-panel"><span class="exp">EXP 9</span><span class="nm">El costo mal medido</span></button><button class="tab" role="tab" id="e11a-tab" aria-selected="false" aria-controls="e11a-panel" data-panel="e11a-panel"><span class="exp">EXP 11</span><span class="nm">El repertorio, no el criterio</span></button><button class="tab" role="tab" id="sx-tab" aria-selected="false" aria-controls="sx-panel" data-panel="sx-panel"><span class="exp">Síntesis</span><span class="nm">El sistema que estamos construyendo</span></button><button class="tab" role="tab" id="e12a-tab" aria-selected="false" aria-controls="e12a-panel" data-panel="e12a-panel"><span class="exp">EXP 12</span><span class="nm">La frontera</span></button></div></div>
+<div class="tabbar"><div class="tabbar-in" role="tablist" aria-label="Experimentos"><button class="tab" role="tab" id="e1a-tab" aria-selected="true" aria-controls="e1a-panel" data-panel="e1a-panel"><span class="exp">EXP 1</span><span class="nm">Diez Mil Vidas de un Trader</span></button><button class="tab" role="tab" id="e1b-tab" aria-selected="false" aria-controls="e1b-panel" data-panel="e1b-panel"><span class="exp">EXP 1</span><span class="nm">Diez Veces el Capital</span></button><button class="tab" role="tab" id="e1c-tab" aria-selected="false" aria-controls="e1c-panel" data-panel="e1c-panel"><span class="exp">EXP 1</span><span class="nm">Informe trayectorias</span></button><button class="tab" role="tab" id="e2a-tab" aria-selected="false" aria-controls="e2a-panel" data-panel="e2a-panel"><span class="exp">EXP 2</span><span class="nm">Agentes con los aprendizajes</span></button><button class="tab" role="tab" id="e3a-tab" aria-selected="false" aria-controls="e3a-panel" data-panel="e3a-panel"><span class="exp">EXP 3</span><span class="nm">El mismo motor sobre BTC/USD</span></button><button class="tab" role="tab" id="e3b-tab" aria-selected="false" aria-controls="e3b-panel" data-panel="e3b-panel"><span class="exp">EXP 3</span><span class="nm">Tres bitácoras al azar</span></button><button class="tab" role="tab" id="e4a-tab" aria-selected="false" aria-controls="e4a-panel" data-panel="e4a-panel"><span class="exp">EXP 4</span><span class="nm">Ventanas rodantes sobre BTC</span></button><button class="tab" role="tab" id="e5a-tab" aria-selected="false" aria-controls="e5a-panel" data-panel="e5a-panel"><span class="exp">EXP 5</span><span class="nm">Dirección y régimen</span></button><button class="tab" role="tab" id="e6a-tab" aria-selected="false" aria-controls="e6a-panel" data-panel="e6a-panel"><span class="exp">EXP 6</span><span class="nm">Cincuenta dólares fijos</span></button><button class="tab" role="tab" id="e7a-tab" aria-selected="false" aria-controls="e7a-panel" data-panel="e7a-panel"><span class="exp">EXP 7</span><span class="nm">Tres a la vez</span></button><button class="tab" role="tab" id="e8a-tab" aria-selected="false" aria-controls="e8a-panel" data-panel="e8a-panel"><span class="exp">EXP 8</span><span class="nm">El tamaño de la apuesta</span></button><button class="tab" role="tab" id="e9a-tab" aria-selected="false" aria-controls="e9a-panel" data-panel="e9a-panel"><span class="exp">EXP 9</span><span class="nm">El costo mal medido</span></button><button class="tab" role="tab" id="e11a-tab" aria-selected="false" aria-controls="e11a-panel" data-panel="e11a-panel"><span class="exp">EXP 11</span><span class="nm">El repertorio, no el criterio</span></button><button class="tab" role="tab" id="sx-tab" aria-selected="false" aria-controls="sx-panel" data-panel="sx-panel"><span class="exp">Síntesis</span><span class="nm">El sistema que estamos construyendo</span></button><button class="tab" role="tab" id="e12a-tab" aria-selected="false" aria-controls="e12a-panel" data-panel="e12a-panel"><span class="exp">EXP 12</span><span class="nm">La frontera</span></button><button class="tab" role="tab" id="e13a-tab" aria-selected="false" aria-controls="e13a-panel" data-panel="e13a-panel"><span class="exp">EXP 13</span><span class="nm">Descorrelación real</span></button></div></div>
 <div class="panelw" id="e1a-panel" role="tabpanel" aria-labelledby="e1a-tab">
 <div class="page">
 
@@ -7134,6 +7305,148 @@ tbody tr.pas td{color:var(--faint); font-style:italic}
 
 </div>
 </div>
+<div class="panelw" id="e13a-panel" role="tabpanel" aria-labelledby="e13a-tab" hidden>
+<div class="page">
+
+<div class="hero col">
+  <div class="kicker">Experimento 13 · BTC/USD + ETH/USD · repartir por timeframe y por activo</div>
+  <h1>Descorrelación <span class="thin">real</span></h1>
+  <p class="standfirst">El EXP 12 dejó una sola salida: bajar la correlación entre los componentes de la cartera. Se probaron las dos palancas baratas. Repartir por timeframe no descorrelaciona, porque el activo es el mismo. Agregar ETH sí: la correlación cae de 0,65 a 0,26, y la cartera mixta es la primera estructura del proyecto que sube el Sharpe. Sube poco, pero sube en el 100% de las réplicas.</p>
+  <div class="byline">
+    Seis brazos · 1.000 agentes por brazo · costos M1 y M3 en los dos activos<br>
+    Universo de ETH construido con el mismo pipeline · 1.540 reglas · test de truncamiento del motor mixto
+  </div>
+</div>
+
+<section class="col">
+  <div class="bloque">Bloque 1</div>
+  <h2>Resumen ejecutivo</h2>
+  <p class="lede">La fórmula del EXP 12 dice que K instancias con correlación ρ multiplican el Sharpe por √(K / (1 + (K − 1)ρ)). Con ρ = 0,65 la mejora es despreciable. Este experimento buscó ρ bajo 0,30 en dos lugares: distintos timeframes del mismo activo, y un segundo activo. Solo el segundo lugar lo tiene.</p>
+</section>
+<div class="hips"><div class="hip2"><div class="id">H1</div><div class="tx">Repartir por timeframe descorrelaciona: ρ(4H, 8H, 12H) bajo 0,30 y T3½ supera al control en Sharpe por 0,10.</div><span class="veredicto v-ref">Refutada</span><div class="cr">ρ media entre las instancias 4H, 8H y 12H: +0,44, sobre el umbral de 0,30. Y T3½ rinde peor que el control en Sharpe: -0,043 bajo M1 y -0,045 bajo M3. Cambiar el timeframe no cambia el activo, y el activo es lo que se mueve.</div></div><div class="hip2"><div class="id">H2</div><div class="tx">El método se transfiere a ETH: una instancia sobre ETH tiene retorno y expectativa positivos con al menos 70% de agentes positivos.</div><span class="veredicto v-conf">Confirmada</span><div class="cr">Una instancia sobre ETH, con el universo construido por el mismo pipeline: +8,9% bajo M3 y +9,3% bajo M1, expectativa +0,139 R, 75% de agentes positivos, Sharpe +0,28. Comparable con la instancia única de BTC (+0,34).</div></div><div class="hip2"><div class="id">H3</div><div class="tx">BTC y ETH se descorrelacionan a nivel de componente: ρ bajo 0,30.</div><span class="veredicto v-conf">Confirmada</span><div class="cr">ρ media entre una instancia de BTC y una de ETH: +0,26. Es la única combinación medida bajo 0,30, y se sostiene año a año (entre 0,18 y 0,35).</div></div><div class="hip2"><div class="id">H4</div><div class="tx">La cartera mixta sube el Sharpe por al menos 0,10 sobre el control, con caída no mayor a 1,2×.</div><span class="veredicto v-par">No concluyente</span><div class="cr">X33¼ supera al control en Sharpe por +0,060 bajo M1 y +0,064 bajo M3, con caída menor (10,4% contra 13,0%). Le gana al control en el 100% de las réplicas. Es una mejora real y consistente, pero queda bajo el umbral de 0,10 que se fijó antes de correr. Se reporta como lo que es.</div></div></div>
+<section class="col" style="padding-top:0">
+  <div class="conclusion">El segundo activo es la palanca. Tres instancias de BTC más tres de ETH, cada una a un cuarto del riesgo, rinden lo mismo que el sistema actual con menos caída, más agentes positivos y un Sharpe +0,06 más alto en el 100% de las réplicas. Cambiar timeframes no sirve; cambiar de activo sí.</div>
+  <p>Qué queda decidido: <b>el sistema pasa a ser mixto</b>. X33¼ (3 BTC + 3 ETH a ¼ de riesgo) reemplaza a C3r½ como punto operativo, con dos condiciones declaradas: el swap de ETH está asumido igual al de BTC hasta que se verifique en Capitaria, y la mejora medida (+0,06 de Sharpe) es menor que la que se exigió antes de correr (0,10). Con Sharpe +0,39 el techo teórico sube de 4,5% a +7,6% anual.</p>
+</section>
+
+<section class="col">
+  <div class="bloque">Bloque 2</div>
+  <h2>Análisis</h2>
+  <h3>Qué se probó y qué no</h3>
+  <p>Seis brazos, todos con el mismo agente, el mismo riesgo fijo y el mismo walk-forward de seis tramos. El control es C3r½, el punto operativo del EXP 12. El tratamiento T reparte las tres instancias de BTC en 4H, 8H y 12H, una por timeframe, en vez de dejarlas elegir dentro del repertorio 4H+8H. El tratamiento E agrega ETH/USD: una instancia sola (E1) para medir su calidad, tres solas (E3½), y dos carteras mixtas, una con el mismo número de instancias que el control (X21½: 2 BTC + 1 ETH) y otra con el mismo riesgo agregado (X33¼: 3 BTC + 3 ETH a ¼).</p>
+  <p><b>El universo de ETH</b> se construyó con el pipeline exacto de BTC: velas de Binance remuestreadas a 4H, 8H, 12H y 1D, régimen bajista medido sin mirar el futuro, las mismas 18 familias de señal, los mismos stops y objetivos. El timeframe de ETH se congeló en mayo de 2020 con sus propios datos: salió 8H y 12H. <b>Lo que no se probó:</b> ningún parámetro se ajustó para ETH. Es el sistema de BTC aplicado a ciegas.</p>
+  <div class="aviso b"><div class="h">Dos supuestos declarados sobre ETH</div>
+    <p><b>Spread:</b> estimado en 0,098% del precio hoy, anclado por la razón de volatilidad entre ETH y BTC (Corwin-Schultz 0,59% contra 0,38%), con la forma anual de ETH. Costo por 1R de ETH: 5,2% bajo M3, en el rango operable.</p>
+    <p><b>Swap:</b> se asume la misma tasa anual que BTC en Capitaria. No está verificado. La sensibilidad con el swap de ETH al doble está abajo.</p>
+  </div>
+</section>
+
+<section class="col"><h3>1 · Dónde está la correlación baja</h3>
+  <p>Lo primero es medir la palanca. Para cada brazo se tomaron 300 agentes, se construyó la serie mensual de R de cada componente y se calculó la correlación entre pares. Es el mismo método del EXP 12, que dio 0,65 para tres instancias de BTC sobre el mismo repertorio.</p>
+</section>
+<div class="panel">
+  <div class="rail">Correlación media entre componentes · series mensuales de R · M3, 300 agentes</div>
+  <svg viewBox="0 0 1296 194" role="img"><g transform="translate(416,6)"><line class="ax" x1="0.0" y1="0" x2="0.0" y2="180"/><rect x="0.0" y="5.0" width="549.9" height="18" rx="1.5" fill="var(--petrol)" opacity=".92"/><text class="axl" x="-12" y="17.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">BTC ~ BTC · mismo repertorio 4H/8H (el sistema actual)</text><text x="541.9" y="17.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,65 · EXP 12</text><rect x="0.0" y="35.0" width="462.4" height="18" rx="1.5" fill="var(--muted2)" opacity=".92"/><text class="axl" x="-12" y="47.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">BTC 4H ~ BTC 8H</text><text x="454.4" y="47.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,54</text><rect x="0.0" y="65.0" width="363.8" height="18" rx="1.5" fill="var(--muted2)" opacity=".92"/><text class="axl" x="-12" y="77.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">BTC 8H ~ BTC 12H</text><text x="355.8" y="77.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,43</text><rect x="0.0" y="95.0" width="284.8" height="18" rx="1.5" fill="var(--muted2)" opacity=".92"/><text class="axl" x="-12" y="107.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">BTC 4H ~ BTC 12H</text><text x="276.8" y="107.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,34</text><rect x="0.0" y="125.0" width="428.4" height="18" rx="1.5" fill="var(--brick)" opacity=".92"/><text class="axl" x="-12" y="137.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">ETH ~ ETH · mismo repertorio</text><text x="420.4" y="137.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,50</text><rect x="0.0" y="155.0" width="217.6" height="18" rx="1.5" fill="var(--green)" opacity=".92"/><text class="axl" x="-12" y="167.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">BTC ~ ETH · una instancia de cada uno</text><text x="209.6" y="167.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,26 · la única bajo 0,30</text></g></svg>
+  <p class="cap"><b>Lectura:</b> separar por timeframe baja la correlación a 0,44: menos que 0,65, pero lejos de 0,30. Las tres instancias siguen mirando el mismo precio; cambia la velocidad a la que lo miran. Entre BTC y ETH la correlación es 0,26: dos activos con el mismo manual se equivocan juntos una de cada cuatro veces, no dos de cada tres.</p>
+</div>
+<div class="nota"><div class="h">Por qué 0,26 importa tanto</div>
+  <p>Con ρ = 0,65, seis instancias multiplican el Sharpe por 1,19 como máximo. Con ρ = 0,26 entre los dos activos (y 0,65 adentro de cada uno), la misma cartera de seis multiplica por cerca de 1,25 en la fórmula, y a diferencia del EXP 12 esta vez la mejora sí se ve en la medición.</p>
+</div>
+
+<section class="col"><h3>2 · El Sharpe por brazo</h3>
+  <p>Todos los brazos bajo los dos modelos de costo. Las dos carteras mixtas están arriba en los dos. T3½ está abajo del control en los dos. ETH solo (E1) tiene un Sharpe comparable con BTC solo, con un tercio de las operaciones.</p>
+</section>
+<div class="panel"><div class="rail">Sharpe anualizado (rf = 0) por brazo y modelo de costo</div><svg viewBox="0 0 1190 374" role="img"><g transform="translate(250,6)"><line class="ax" x1="0.0" y1="0" x2="0.0" y2="360"/><rect x="0.0" y="5.0" width="460.4" height="18" rx="1.5" fill="var(--petrol)" opacity=".92"/><text class="axl" x="-12" y="17.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">C3r½ (control) · M3</text><text x="452.4" y="17.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,33 · caída 13,0% · 88% positivos</text><rect x="0.0" y="35.0" width="491.6" height="18" rx="1.5" fill="var(--petrol)" opacity=".92"/><text class="axl" x="-12" y="47.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">C3r½ (control) · M1</text><text x="483.6" y="47.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,35</text><rect x="0.0" y="65.0" width="396.7" height="18" rx="1.5" fill="var(--muted2)" opacity=".92"/><text class="axl" x="-12" y="77.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">T3½ · por timeframe · M3</text><text x="388.7" y="77.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,28 · caída 12,2% · 86% positivos</text><rect x="0.0" y="95.0" width="430.7" height="18" rx="1.5" fill="var(--muted2)" opacity=".92"/><text class="axl" x="-12" y="107.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">T3½ · por timeframe · M1</text><text x="422.7" y="107.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,30</text><rect x="0.0" y="125.0" width="399.5" height="18" rx="1.5" fill="var(--faint2)" opacity=".92"/><text class="axl" x="-12" y="137.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">E1 · ETH solo · M3</text><text x="391.5" y="137.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,28 · caída 10,8% · 75% positivos</text><rect x="0.0" y="155.0" width="419.3" height="18" rx="1.5" fill="var(--faint2)" opacity=".92"/><text class="axl" x="-12" y="167.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">E1 · ETH solo · M1</text><text x="411.3" y="167.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,30</text><rect x="0.0" y="185.0" width="477.4" height="18" rx="1.5" fill="var(--brick)" opacity=".92"/><text class="axl" x="-12" y="197.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">E3½ · 3 ETH · M3</text><text x="469.4" y="197.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,34 · caída 12,4% · 86% positivos</text><rect x="0.0" y="215.0" width="527.0" height="18" rx="1.5" fill="var(--brick)" opacity=".92"/><text class="axl" x="-12" y="227.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">E3½ · 3 ETH · M1</text><text x="519.0" y="227.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,37</text><rect x="0.0" y="245.0" width="508.6" height="18" rx="1.5" fill="var(--green)" opacity=".92"/><text class="axl" x="-12" y="257.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">X21½ · 2 BTC + 1 ETH · M3</text><text x="500.6" y="257.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,36 · caída 11,9% · 90% positivos</text><rect x="0.0" y="275.0" width="546.8" height="18" rx="1.5" fill="var(--green)" opacity=".92"/><text class="axl" x="-12" y="287.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">X21½ · 2 BTC + 1 ETH · M1</text><text x="538.8" y="287.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,39</text><rect x="0.0" y="305.0" width="551.1" height="18" rx="1.5" fill="var(--green)" opacity=".92"/><text class="axl" x="-12" y="317.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">X33¼ · 3 BTC + 3 ETH · M3</text><text x="543.1" y="317.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,39 · caída 10,4% · 94% positivos</text><rect x="0.0" y="335.0" width="576.6" height="18" rx="1.5" fill="var(--green)" opacity=".92"/><text class="axl" x="-12" y="347.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">X33¼ · 3 BTC + 3 ETH · M1</text><text x="568.6" y="347.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,41</text></g></svg>
+  <p class="cap">El error de réplica es ±0,02. Las diferencias entre X33¼ y el control (+0,06 bajo M3, +0,06 bajo M1) son tres veces ese error, en la misma dirección en los dos modelos.</p>
+</div>
+
+<section class="col"><h3>3 · Fuera de la recta del EXP 12</h3>
+  <p>El EXP 12 mostró que todas las combinaciones de instancias y riesgo de BTC caen sobre una recta de retorno contra caída. Si el segundo activo agrega algo, los brazos mixtos tienen que quedar <b>arriba</b> de esa recta: más retorno por la misma caída. El gráfico superpone los seis brazos sobre las 18 celdas del EXP 12.</p>
+</section>
+<div class="panel"><div class="rail">Retorno contra caída · los brazos del EXP 13 sobre la recta del EXP 12 (M3)</div>
+  <div class="legend"><span><i class="swatch" style="background:var(--petrol)"></i>control C3r½</span><span><i class="swatch" style="background:var(--green)"></i>carteras mixtas</span><span><i class="swatch" style="background:var(--brick)"></i>3 ETH</span><span><i class="swatch" style="background:var(--muted2)"></i>por timeframe</span><span><i class="swatch" style="background:var(--faint)"></i>celdas del EXP 12</span></div>
+  <svg viewBox="0 0 830 362" role="img"><g transform="translate(58,10)"><line class="gl" x1="0" y1="300.0" x2="720" y2="300.0"/><text class="axl" x="-8" y="303.5" text-anchor="end">+0%</text><line class="gl" x1="0" y1="242.3" x2="720" y2="242.3"/><text class="axl" x="-8" y="245.8" text-anchor="end">+5%</text><line class="gl" x1="0" y1="184.6" x2="720" y2="184.6"/><text class="axl" x="-8" y="188.1" text-anchor="end">+10%</text><line class="gl" x1="0" y1="126.9" x2="720" y2="126.9"/><text class="axl" x="-8" y="130.4" text-anchor="end">+15%</text><line class="gl" x1="0" y1="69.2" x2="720" y2="69.2"/><text class="axl" x="-8" y="72.7" text-anchor="end">+20%</text><line class="gl" x1="0" y1="11.5" x2="720" y2="11.5"/><text class="axl" x="-8" y="15.0" text-anchor="end">+25%</text><text class="axl" x="0.0" y="320" text-anchor="middle">caída 0%</text><text class="axl" x="144.0" y="320" text-anchor="middle">caída 10%</text><text class="axl" x="288.0" y="320" text-anchor="middle">caída 20%</text><text class="axl" x="432.0" y="320" text-anchor="middle">caída 30%</text><text class="axl" x="576.0" y="320" text-anchor="middle">caída 40%</text><text class="axl" x="720.0" y="320" text-anchor="middle">caída 50%</text><line x1="0.0" y1="214.4" x2="691.2" y2="-11.2" stroke="var(--faint)" stroke-width="1.2" stroke-dasharray="5 4"/><circle cx="49.0" cy="263.0" r="4" fill="var(--faint)" opacity=".5"/><circle cx="76.3" cy="214.0" r="4" fill="var(--faint)" opacity=".5"/><circle cx="159.8" cy="147.7" r="4" fill="var(--faint)" opacity=".5"/><circle cx="79.2" cy="230.5" r="4" fill="var(--faint)" opacity=".5"/><circle cx="126.7" cy="166.4" r="4" fill="var(--faint)" opacity=".5"/><circle cx="283.7" cy="102.8" r="4" fill="var(--faint)" opacity=".5"/><circle cx="106.6" cy="198.7" r="4" fill="var(--faint)" opacity=".5"/><circle cx="188.6" cy="132.8" r="4" fill="var(--faint)" opacity=".5"/><circle cx="347.0" cy="48.6" r="4" fill="var(--faint)" opacity=".5"/><circle cx="132.5" cy="168.7" r="4" fill="var(--faint)" opacity=".5"/><circle cx="254.9" cy="104.1" r="4" fill="var(--faint)" opacity=".5"/><circle cx="455.0" cy="45.1" r="4" fill="var(--faint)" opacity=".5"/><circle cx="159.8" cy="145.4" r="4" fill="var(--faint)" opacity=".5"/><circle cx="301.0" cy="63.0" r="4" fill="var(--faint)" opacity=".5"/><circle cx="512.6" cy="42.6" r="4" fill="var(--faint)" opacity=".5"/><circle cx="259.2" cy="114.0" r="4" fill="var(--faint)" opacity=".5"/><circle cx="424.8" cy="101.1" r="4" fill="var(--faint)" opacity=".5"/><circle cx="656.6" cy="78.1" r="4" fill="var(--faint)" opacity=".5"/><circle cx="187.2" cy="119.4" r="7" fill="var(--petrol)" stroke="var(--panel)" stroke-width="1.5"/><text x="197.2" y="110.4" style="font-family:var(--mono);font-size:10.5px;fill:var(--ink-2)">C3r½ (control)</text><circle cx="175.7" cy="162.3" r="7" fill="var(--muted2)" stroke="var(--panel)" stroke-width="1.5"/><text x="185.7" y="166.3" style="font-family:var(--mono);font-size:10.5px;fill:var(--ink-2)">T3½</text><circle cx="155.5" cy="197.8" r="7" fill="var(--faint2)" stroke="var(--panel)" stroke-width="1.5"/><text x="165.5" y="201.8" style="font-family:var(--mono);font-size:10.5px;fill:var(--ink-2)">E1</text><circle cx="178.6" cy="145.3" r="7" fill="var(--brick)" stroke="var(--panel)" stroke-width="1.5"/><text x="188.6" y="149.3" style="font-family:var(--mono);font-size:10.5px;fill:var(--ink-2)">E3½</text><circle cx="171.4" cy="118.6" r="7" fill="var(--green)" stroke="var(--panel)" stroke-width="1.5"/><text x="181.4" y="134.6" style="font-family:var(--mono);font-size:10.5px;fill:var(--ink-2)">X21½</text><circle cx="149.8" cy="110.2" r="7" fill="var(--green)" stroke="var(--panel)" stroke-width="1.5"/><text x="159.8" y="114.2" style="font-family:var(--mono);font-size:10.5px;fill:var(--ink-2)">X33¼</text><text class="axl" x="360" y="344" text-anchor="middle" style="fill:var(--ink-2)">caída máxima mediana (M3) · puntos grises: las 18 celdas del EXP 12 y su recta</text></g></svg>
+  <p class="cap">X33¼ y X21½ quedan sobre la recta; T3½ queda debajo. Es la representación visual de «más eficiencia» que el EXP 12 no encontró en ninguna celda.</p>
+</div>
+
+<section class="col"><h3>4 · Las curvas de capital</h3>
+  <p>El control y la cartera mixta llegan casi al mismo lugar, pero la mixta lo hace con menos hoyo en 2022 y menos vuelo en 2021. Es lo que se espera de dos activos que no caen juntos: no más retorno, sino el mismo retorno con menos sobresaltos.</p>
+</section>
+<div class="panel"><div class="rail">Curva de capital mediana, mayo 2020 a abril 2026 (M3)</div>
+  <div class="legend"><span><i class="swatch" style="background:var(--petrol)"></i>C3r½ (control)</span><span><i class="swatch" style="background:var(--green)"></i>X33¼ · 3 BTC + 3 ETH</span><span><i class="swatch" style="background:var(--brick)"></i>E3½ · 3 ETH</span><span><i class="swatch" style="background:var(--muted2)"></i>T3½ · por timeframe</span></div>
+  <svg viewBox="0 0 860 326" role="img"><g transform="translate(52,8)"><line class="gl" x1="0" y1="290.0" x2="760" y2="290.0"/><text class="axl" x="-8" y="293.5" text-anchor="end">0,95x</text><line class="gl" x1="0" y1="248.6" x2="760" y2="248.6"/><text class="axl" x="-8" y="252.1" text-anchor="end">1,00x</text><line class="gl" x1="0" y1="207.1" x2="760" y2="207.1"/><text class="axl" x="-8" y="210.6" text-anchor="end">1,05x</text><line class="gl" x1="0" y1="165.7" x2="760" y2="165.7"/><text class="axl" x="-8" y="169.2" text-anchor="end">1,10x</text><line class="gl" x1="0" y1="124.3" x2="760" y2="124.3"/><text class="axl" x="-8" y="127.8" text-anchor="end">1,15x</text><line class="gl" x1="0" y1="82.9" x2="760" y2="82.9"/><text class="axl" x="-8" y="86.4" text-anchor="end">1,20x</text><line class="gl" x1="0" y1="41.4" x2="760" y2="41.4"/><text class="axl" x="-8" y="44.9" text-anchor="end">1,25x</text><line class="gl" x1="0" y1="0.0" x2="760" y2="0.0"/><text class="axl" x="-8" y="3.5" text-anchor="end">1,30x</text><line class="ax" x1="0" y1="248.6" x2="760" y2="248.6" stroke-width="1.4"/><text class="axl" x="0.0" y="312" text-anchor="middle">may-20</text><text class="axl" x="126.7" y="312" text-anchor="middle">may-21</text><text class="axl" x="253.3" y="312" text-anchor="middle">may-22</text><text class="axl" x="380.0" y="312" text-anchor="middle">may-23</text><text class="axl" x="506.7" y="312" text-anchor="middle">may-24</text><text class="axl" x="633.3" y="312" text-anchor="middle">may-25</text><text class="axl" x="760.0" y="312" text-anchor="middle">may-26</text><path d="M0.0,260.8 L10.7,276.9 L21.4,255.4 L32.1,263.7 L42.8,279.6 L53.5,250.0 L64.2,221.7 L74.9,175.0 L85.6,170.8 L96.3,147.4 L107.0,151.7 L117.7,167.9 L128.5,168.2 L139.2,159.8 L149.9,156.3 L160.6,131.1 L171.3,148.5 L182.0,125.0 L192.7,129.4 L203.4,129.5 L214.1,99.1 L224.8,119.3 L235.5,126.8 L246.2,114.7 L256.9,99.3 L267.6,67.5 L278.3,92.9 L289.0,103.1 L299.7,117.1 L310.4,124.1 L321.1,135.7 L331.8,153.7 L342.5,130.3 L353.2,122.2 L363.9,114.4 L374.6,112.2 L385.4,123.0 L396.1,106.1 L406.8,117.4 L417.5,126.5 L428.2,149.7 L438.9,134.4 L449.6,135.4 L460.3,110.3 L471.0,128.2 L481.7,69.4 L492.4,73.8 L503.1,101.6 L513.8,100.8 L524.5,105.8 L535.2,82.3 L545.9,113.7 L556.6,126.4 L567.3,121.3 L578.0,70.6 L588.7,88.7 L599.4,97.0 L610.1,109.5 L620.8,100.0 L631.5,83.6 L642.3,82.3 L653.0,99.3 L663.7,74.2 L674.4,92.6 L685.1,114.8 L695.8,116.4 L706.5,98.7 L717.2,110.2 L727.9,120.6 L738.6,109.5 L749.3,121.1 L760.0,118.9" fill="none" stroke="var(--petrol)" stroke-width="2.4" stroke-linejoin="round"/><text class="axl" x="766" y="122.4" style="fill:var(--petrol);font-size:10.5px">C3r½</text><path d="M0.0,251.5 L10.7,260.9 L21.4,234.6 L32.1,236.5 L42.8,248.6 L53.5,234.2 L64.2,198.1 L74.9,173.8 L85.6,170.8 L96.3,150.1 L107.0,156.0 L117.7,156.9 L128.5,160.3 L139.2,153.7 L149.9,152.5 L160.6,128.4 L171.3,143.5 L182.0,117.8 L192.7,113.0 L203.4,122.3 L214.1,86.3 L224.8,106.6 L235.5,112.4 L246.2,108.9 L256.9,89.2 L267.6,62.1 L278.3,83.2 L289.0,90.5 L299.7,110.2 L310.4,115.0 L321.1,122.5 L331.8,136.0 L342.5,121.5 L353.2,118.2 L363.9,114.8 L374.6,109.2 L385.4,117.2 L396.1,114.8 L406.8,119.8 L417.5,125.7 L428.2,141.1 L438.9,133.6 L449.6,127.5 L460.3,111.6 L471.0,122.7 L481.7,81.3 L492.4,90.1 L503.1,114.8 L513.8,114.3 L524.5,125.0 L535.2,115.1 L545.9,133.7 L556.6,141.4 L567.3,142.0 L578.0,96.4 L588.7,115.4 L599.4,127.9 L610.1,137.8 L620.8,120.1 L631.5,104.0 L642.3,100.3 L653.0,115.4 L663.7,77.5 L674.4,79.3 L685.1,98.8 L695.8,115.7 L706.5,95.6 L717.2,98.6 L727.9,119.1 L738.6,98.7 L749.3,108.9 L760.0,112.3" fill="none" stroke="var(--green)" stroke-width="2.8" stroke-linejoin="round"/><text class="axl" x="766" y="115.8" style="fill:var(--green);font-size:10.5px">X33¼</text><path d="M0.0,248.0 L10.7,245.8 L21.4,212.5 L32.1,208.7 L42.8,219.6 L53.5,218.9 L64.2,184.9 L74.9,184.9 L85.6,174.3 L96.3,171.3 L107.0,177.4 L117.7,142.4 L128.5,147.6 L139.2,150.9 L149.9,160.4 L160.6,156.1 L171.3,154.8 L182.0,142.4 L192.7,129.6 L203.4,146.5 L214.1,119.0 L224.8,125.8 L235.5,130.9 L246.2,134.8 L256.9,119.5 L267.6,91.0 L278.3,106.7 L289.0,115.6 L299.7,137.8 L310.4,142.5 L321.1,146.3 L331.8,153.8 L342.5,147.7 L353.2,151.2 L363.9,152.7 L374.6,146.5 L385.4,157.8 L396.1,167.9 L406.8,169.2 L417.5,172.0 L428.2,174.2 L438.9,176.7 L449.6,166.9 L460.3,166.4 L471.0,165.5 L481.7,150.1 L492.4,153.1 L503.1,163.0 L513.8,161.1 L524.5,174.8 L535.2,182.7 L545.9,179.1 L556.6,178.1 L567.3,188.1 L578.0,163.7 L588.7,173.3 L599.4,181.7 L610.1,179.2 L620.8,162.2 L631.5,155.5 L642.3,154.4 L653.0,166.0 L663.7,125.9 L674.4,111.9 L685.1,121.8 L695.8,140.9 L706.5,134.6 L717.2,130.8 L727.9,155.1 L738.6,125.3 L749.3,132.3 L760.0,137.5" fill="none" stroke="var(--brick)" stroke-width="2.0" stroke-linejoin="round"/><text class="axl" x="766" y="141.0" style="fill:var(--brick);font-size:10.5px">E3½</text><path d="M0.0,256.9 L10.7,269.3 L21.4,249.6 L32.1,260.7 L42.8,276.0 L53.5,245.7 L64.2,221.1 L74.9,178.4 L85.6,175.6 L96.3,160.7 L107.0,157.7 L117.7,174.2 L128.5,177.4 L139.2,175.7 L149.9,173.6 L160.6,159.5 L171.3,168.7 L182.0,141.1 L192.7,148.8 L203.4,148.2 L214.1,117.7 L224.8,136.8 L235.5,146.9 L246.2,136.9 L256.9,119.0 L267.6,92.6 L278.3,112.6 L289.0,119.6 L299.7,129.8 L310.4,133.2 L321.1,146.1 L331.8,161.9 L342.5,138.1 L353.2,128.2 L363.9,120.1 L374.6,115.2 L385.4,122.6 L396.1,115.8 L406.8,126.6 L417.5,132.7 L428.2,157.1 L438.9,144.3 L449.6,140.9 L460.3,118.0 L471.0,133.1 L481.7,73.5 L492.4,75.6 L503.1,105.6 L513.8,107.5 L524.5,116.6 L535.2,105.6 L545.9,133.8 L556.6,144.3 L567.3,138.1 L578.0,101.1 L588.7,113.6 L599.4,125.2 L610.1,136.5 L620.8,135.0 L631.5,122.9 L642.3,122.6 L653.0,133.6 L663.7,114.8 L674.4,127.6 L685.1,148.2 L695.8,145.6 L706.5,132.2 L717.2,140.6 L727.9,149.4 L738.6,140.1 L749.3,148.8 L760.0,149.7" fill="none" stroke="var(--muted2)" stroke-width="1.8" stroke-linejoin="round"/><text class="axl" x="766" y="153.2" style="fill:var(--muted2);font-size:10.5px">T3½</text></g></svg>
+</div>
+
+<section class="col"><h3>5 · La descorrelación es estable en el tiempo</h3>
+  <p>Una correlación baja que viva en un solo año no sirve para operar. Se midió ρ entre BTC y ETH tramo por tramo. Está bajo 0,36 en los seis, incluido 2022, que fue el año de caída de los dos activos.</p>
+</section>
+<div class="panel"><div class="rail">ρ entre una instancia de BTC y una de ETH, por tramo del walk-forward</div><svg viewBox="0 0 970 194" role="img"><g transform="translate(170,6)"><line class="ax" x1="0.0" y1="0" x2="0.0" y2="180"/><rect x="0.0" y="5.0" width="179.7" height="18" rx="1.5" fill="var(--green)" opacity=".92"/><text class="axl" x="-12" y="17.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">may-2020 a abr-2021</text><text x="171.7" y="17.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,18</text><rect x="0.0" y="35.0" width="260.3" height="18" rx="1.5" fill="var(--green)" opacity=".92"/><text class="axl" x="-12" y="47.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">may-2021 a abr-2022</text><text x="252.3" y="47.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,27</text><rect x="0.0" y="65.0" width="341.9" height="18" rx="1.5" fill="var(--petrol)" opacity=".92"/><text class="axl" x="-12" y="77.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">may-2022 a abr-2023</text><text x="333.9" y="77.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,35</text><rect x="0.0" y="95.0" width="204.0" height="18" rx="1.5" fill="var(--green)" opacity=".92"/><text class="axl" x="-12" y="107.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">may-2023 a abr-2024</text><text x="196.0" y="107.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,21</text><rect x="0.0" y="125.0" width="252.6" height="18" rx="1.5" fill="var(--green)" opacity=".92"/><text class="axl" x="-12" y="137.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">may-2024 a abr-2025</text><text x="244.6" y="137.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,26</text><rect x="0.0" y="155.0" width="307.0" height="18" rx="1.5" fill="var(--petrol)" opacity=".92"/><text class="axl" x="-12" y="167.5" text-anchor="end" style="fill:var(--ink-2);font-size:11.5px">may-2025 a abr-2026</text><text x="299.0" y="167.5" text-anchor="end" style="font-family:var(--mono);font-size:10.5px;fill:#fff;opacity:.95">0,32</text></g></svg></div>
+
+<section class="col"><h3>6 · Todos los brazos</h3></section>
+<div class="panel"><div class="rail">M3 · proporcional con forma</div><div class="tw"><table><thead><tr><th>brazo</th><th>retorno 6 años</th><th>positivos</th><th>Sharpe</th><th>Sharpe rf 5%</th><th>caída</th><th>CAGR</th><th>ops</th><th>riesgo agreg.</th><th>R / punto riesgo</th></tr></thead><tbody><tr><td>C3r½ (control)</td><td>+15,7%</td><td>88%</td><td>+0,33</td><td>-0,23</td><td>-13,0%</td><td>+2,5%</td><td>312</td><td>1,01</td><td>44</td></tr><tr><td>T3½ · por timeframe</td><td>+11,9%</td><td>86%</td><td>+0,28</td><td>-0,32</td><td>-12,2%</td><td>+1,9%</td><td>305</td><td>1,00</td><td>35</td></tr><tr><td>E1 · ETH solo</td><td>+8,9%</td><td>75%</td><td>+0,28</td><td>-0,58</td><td>-10,8%</td><td>+1,4%</td><td>60</td><td>1,10</td><td>8</td></tr><tr><td>E3½ · 3 ETH</td><td>+13,4%</td><td>86%</td><td>+0,34</td><td>-0,36</td><td>-12,4%</td><td>+2,1%</td><td>186</td><td>0,94</td><td>28</td></tr><tr><td>X21½ · 2 BTC + 1 ETH</td><td>+15,7%</td><td>90%</td><td>+0,36</td><td>-0,27</td><td>-11,9%</td><td>+2,5%</td><td>271</td><td>0,99</td><td>40</td></tr><tr class="hi"><td>X33¼ · 3 BTC + 3 ETH</td><td>+16,4%</td><td>94%</td><td>+0,39</td><td>-0,28</td><td>-10,4%</td><td>+2,6%</td><td>506</td><td>0,81</td><td>92</td></tr></tbody></table></div></div>
+<div class="panel"><div class="rail">M1 · proporcional fijo</div><div class="tw"><table><thead><tr><th>brazo</th><th>retorno 6 años</th><th>positivos</th><th>Sharpe</th><th>Sharpe rf 5%</th><th>caída</th><th>CAGR</th><th>ops</th><th>riesgo agreg.</th><th>R / punto riesgo</th></tr></thead><tbody><tr><td>C3r½ (control)</td><td>+17,3%</td><td>89%</td><td>+0,35</td><td>-0,19</td><td>-12,5%</td><td>+2,7%</td><td>315</td><td>1,01</td><td>47</td></tr><tr><td>T3½ · por timeframe</td><td>+13,6%</td><td>89%</td><td>+0,30</td><td>-0,28</td><td>-11,7%</td><td>+2,2%</td><td>315</td><td>0,98</td><td>39</td></tr><tr><td>E1 · ETH solo</td><td>+9,3%</td><td>78%</td><td>+0,30</td><td>-0,55</td><td>-10,5%</td><td>+1,5%</td><td>61</td><td>1,10</td><td>8</td></tr><tr><td>E3½ · 3 ETH</td><td>+14,6%</td><td>87%</td><td>+0,37</td><td>-0,34</td><td>-12,3%</td><td>+2,3%</td><td>190</td><td>0,95</td><td>31</td></tr><tr><td>X21½ · 2 BTC + 1 ETH</td><td>+17,7%</td><td>91%</td><td>+0,39</td><td>-0,24</td><td>-11,3%</td><td>+2,8%</td><td>275</td><td>1,00</td><td>41</td></tr><tr class="hi"><td>X33¼ · 3 BTC + 3 ETH</td><td>+17,6%</td><td>95%</td><td>+0,41</td><td>-0,27</td><td>-10,3%</td><td>+2,8%</td><td>514</td><td>0,82</td><td>97</td></tr></tbody></table></div></div>
+
+<section class="col"><h3>7 · Retorno ajustado por riesgo</h3>
+  <p>Con rf = 5% todos los brazos siguen negativos: la cartera mixta pasa de -0,23 a -0,28. Mejora, pero el sistema todavía no le gana a un depósito en dólares ajustado por riesgo. Contra comprar y mantener BTC (Sharpe +0,15 con swap corregido, EXP 9), toda la grilla gana en Sharpe y pierde en retorno bruto. El R por punto de riesgo de X33¼ es 92, el doble del control, por el mismo mecanismo del EXP 12: riesgo más chico por instancia, menos arrastre compuesto.</p>
+</section>
+
+<section class="col"><h3>8 · Ficha de la estrategia resultante (X33¼)</h3></section>
+<div class="panel"><div class="rail">Los 14 campos</div>
+<div class="tw"><table><thead><tr><th>campo</th><th>valor</th></tr></thead><tbody><tr><td>1 · Timeframe</td><td>BTC congelado en 4H u 8H · ETH congelado en 8H u 12H, cada uno con sus propios datos</td></tr><tr><td>2 · Indicadores</td><td>Mismo repertorio en los dos activos: Donchian, EMA, Bollinger, MACD, RSI con filtro EMA 200 y ATR(14)</td></tr><tr><td>3 · Entradas long</td><td>Señal de la regla activa de cada instancia, precio sobre la EMA 200</td></tr><tr><td>4 · Entradas short</td><td>Solo con régimen bajista confirmado, en los dos activos</td></tr><tr><td>5 · Salidas</td><td>Stop, objetivo o corte de tiempo (el EXP 15 prueba la señal opuesta)</td></tr><tr><td>6 · Stop loss</td><td>Múltiplo de ATR(14), mayoritariamente 3×</td></tr><tr><td>7 · Take profit</td><td>2:1 o 3:1 sobre el stop</td></tr><tr><td>8 · Ratio nominal y realizado</td><td>Expectativa realizada +0,147 R por operación</td></tr><tr><td>9 · Tamaño y riesgo</td><td>Seis instancias (3 BTC + 3 ETH), riesgo fijo ¼ del base (≈0,25%) cada una · riesgo agregado medido 0,81%</td></tr><tr><td>10 · Frecuencia</td><td>506 operaciones en seis años, 7.0 al mes</td></tr><tr><td>11 · Rentabilidad histórica</td><td>+16,4% mediana · CAGR +2,6% · 94% de agentes positivos</td></tr><tr><td>12 · Drawdown máximo</td><td>-10,4% mediano sobre la curva encadenada</td></tr><tr><td>13 · Métricas de riesgo</td><td>Sharpe +0,39 (rf 0) · -0,28 (rf 5%) · Sortino +0,52 · Calmar +0,26 · R por punto de riesgo 92</td></tr><tr><td>14 · Robustez</td><td>Walk-forward de seis tramos en los dos activos · 10 réplicas (Sharpe ± 0,020, gana al control en el 100%) · orden estable con spread 2× y swap ETH 2× · truncamiento 6/6 OK</td></tr></tbody></table></div></div>
+
+<section class="col"><h3>9 · Validación</h3>
+  <p><b>Reproducibilidad.</b> Diez réplicas de 200 agentes. La cartera mixta supera al control en Sharpe en el 100% de las réplicas, en las dos variantes. La dispersión es ±0,02, y la diferencia media es 0,065: tres desviaciones.</p>
+</section>
+<div class="panel"><div class="rail">Reproducibilidad · M3</div><div class="tw"><table><thead><tr><th>brazo</th><th>Sharpe (10 réplicas)</th><th>retorno</th><th>supera al control en Sharpe</th></tr></thead><tbody><tr><td>C3r½ (control)</td><td>+0,31 ± 0,023</td><td>+15,2% ± 1,54%</td><td>referencia</td></tr><tr><td>X21½ · 2 BTC + 1 ETH</td><td>+0,38 ± 0,018</td><td>+16,0% ± 0,97%</td><td>100%</td></tr><tr><td>X33¼ · 3 BTC + 3 ETH</td><td>+0,38 ± 0,020</td><td>+15,6% ± 1,06%</td><td>100%</td></tr></tbody></table></div></div>
+<section class="col">
+  <p><b>Sensibilidad al costo.</b> Con el spread al doble en los dos activos, la cartera mixta sigue arriba del control y la brecha se ensancha (0,30 contra 0,23), porque ETH reparte el costo entre dos fuentes. Con el swap de ETH al doble, la ventaja se achica pero no desaparece. Con las dos cosas a la vez, X21½ sigue ganando y X33¼ empata.</p>
+</section>
+<div class="panel"><div class="rail">Sensibilidad al costo · M3 · 400 agentes por celda</div><div class="tw"><table><thead><tr><th>escenario</th><th>brazo</th><th>retorno</th><th>Sharpe</th><th>caída</th><th>positivos</th></tr></thead><tbody><tr><td>base</td><td>C3r½ (control)</td><td>+16,0%</td><td>+0,34</td><td>-12,5%</td><td>91%</td></tr><tr class="hi"><td>base</td><td>X21½ · 2 BTC + 1 ETH</td><td>+16,0%</td><td>+0,37</td><td>-11,3%</td><td>90%</td></tr><tr class="hi"><td>base</td><td>X33¼ · 3 BTC + 3 ETH</td><td>+14,9%</td><td>+0,35</td><td>-10,8%</td><td>94%</td></tr><tr><td>base</td><td>E1 · ETH solo</td><td>+8,1%</td><td>+0,26</td><td>-10,4%</td><td>79%</td></tr><tr><td>spread 2× en BTC y ETH</td><td>C3r½ (control)</td><td>+10,5%</td><td>+0,23</td><td>-14,4%</td><td>79%</td></tr><tr><td>spread 2× en BTC y ETH</td><td>X21½ · 2 BTC + 1 ETH</td><td>+11,3%</td><td>+0,28</td><td>-11,8%</td><td>86%</td></tr><tr><td>spread 2× en BTC y ETH</td><td>X33¼ · 3 BTC + 3 ETH</td><td>+11,6%</td><td>+0,30</td><td>-11,1%</td><td>90%</td></tr><tr><td>spread 2× en BTC y ETH</td><td>E1 · ETH solo</td><td>+7,2%</td><td>+0,25</td><td>-10,4%</td><td>73%</td></tr><tr><td>swap ETH 2×</td><td>C3r½ (control)</td><td>+16,0%</td><td>+0,34</td><td>-12,5%</td><td>91%</td></tr><tr><td>swap ETH 2×</td><td>X21½ · 2 BTC + 1 ETH</td><td>+14,6%</td><td>+0,35</td><td>-11,4%</td><td>88%</td></tr><tr><td>swap ETH 2×</td><td>X33¼ · 3 BTC + 3 ETH</td><td>+12,9%</td><td>+0,32</td><td>-10,5%</td><td>90%</td></tr><tr><td>swap ETH 2×</td><td>E1 · ETH solo</td><td>+6,9%</td><td>+0,22</td><td>-10,9%</td><td>74%</td></tr><tr><td>spread 2× y swap ETH 2×</td><td>C3r½ (control)</td><td>+10,5%</td><td>+0,23</td><td>-14,4%</td><td>79%</td></tr><tr><td>spread 2× y swap ETH 2×</td><td>X21½ · 2 BTC + 1 ETH</td><td>+11,2%</td><td>+0,29</td><td>-12,3%</td><td>86%</td></tr><tr><td>spread 2× y swap ETH 2×</td><td>X33¼ · 3 BTC + 3 ETH</td><td>+10,0%</td><td>+0,26</td><td>-11,3%</td><td>85%</td></tr><tr><td>spread 2× y swap ETH 2×</td><td>E1 · ETH solo</td><td>+6,0%</td><td>+0,22</td><td>-10,2%</td><td>70%</td></tr></tbody></table></div></div>
+<section class="col">
+  <p><b>Truncamiento.</b> La superficie nueva es el motor mixto con dos universos. Se corrió con 10, 40 y 100 días truncados en los dos activos a la vez, dos semillas: <b>6 de 6 casos idénticos</b> en entrada, salida, lotes y riesgo.</p>
+  <p><b>Lo que este experimento no valida:</b> el costo real de ETH en Capitaria. Ni el spread ni el swap. Es la misma marca que lleva BTC desde el EXP 9, ahora sobre dos activos.</p>
+</section>
+
+<section class="col">
+  <div class="bloque">Bloque 3</div>
+  <h2>Conclusiones generales</h2>
+  <p class="lede">Primera vez en trece experimentos que una decisión de estructura sube el Sharpe. Y la razón es exactamente la que la fórmula predecía.</p>
+  <p><b>Cierra:</b> repartir por timeframe. Queda medido con ρ = 0,44 y Sharpe por debajo del control. No se vuelve a probar sobre el mismo activo.</p>
+  <p><b>Abre:</b> el sistema es un método, no una estrategia sobre BTC. Se transfirió a ETH sin tocar un parámetro y rindió parecido. Eso sugiere que un tercer activo con ρ bajo 0,3 respecto de los dos (no cripto) movería el Sharpe otro escalón. Es el paso siguiente natural después de los EXP 14 y 15.</p>
+  <p><b>Lo que le pasa al medidor:</b> sube dos puntos, de 40 a 42. El Sharpe del sistema pasa de 0,33 a 0,39, que en la escala del estándar vale 7 de 20 en vez de 5. Nada más se mueve: el costo sigue estimado, ahora en dos activos.</p>
+</section>
+<div class="medidor"><p class="t">Cercanía al sistema rentable y eficiente en Sharpe</p><p class="s">Escala 1 a 100 definida en el estándar. Pelotita hueca: antes de este experimento. Pelotita llena: después.</p><svg viewBox="0 0 880 128" role="img"><g><line x1="30" y1="62" x2="810" y2="62" stroke="var(--rule-strong)" stroke-width="3" stroke-linecap="round"/><line x1="30" y1="62" x2="357.6" y2="62" stroke="var(--green)" stroke-width="3" stroke-linecap="round" opacity=".55"/><line x1="30.0" y1="56" x2="30.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><text class="axl" x="30.0" y="86" text-anchor="middle">0</text><line x1="108.0" y1="56" x2="108.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><line x1="186.0" y1="56" x2="186.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><text class="axl" x="186.0" y="86" text-anchor="middle">20</text><line x1="264.0" y1="56" x2="264.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><line x1="342.0" y1="56" x2="342.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><text class="axl" x="342.0" y="86" text-anchor="middle">40</text><line x1="420.0" y1="56" x2="420.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><line x1="498.0" y1="56" x2="498.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><text class="axl" x="498.0" y="86" text-anchor="middle">60</text><line x1="576.0" y1="56" x2="576.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><line x1="654.0" y1="56" x2="654.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><text class="axl" x="654.0" y="86" text-anchor="middle">80</text><line x1="732.0" y1="56" x2="732.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><line x1="810.0" y1="56" x2="810.0" y2="68" stroke="var(--rule-strong)" stroke-width="1"/><text class="axl" x="810.0" y="86" text-anchor="middle">100</text><text x="820" y="67" style="font-family:var(--mono);font-size:15px;font-weight:600;fill:var(--ink)">100%</text><circle cx="342.0" cy="62" r="9" fill="var(--panel)" stroke="var(--faint)" stroke-width="2"/><text class="axl" x="342.0" y="102" text-anchor="middle">antes · 40</text><circle cx="357.6" cy="62" r="11" fill="var(--green)" stroke="var(--panel)" stroke-width="2.5"/><text x="357.6" y="42" text-anchor="middle" style="font-family:var(--mono);font-size:14px;font-weight:600;fill:var(--green)">42</text></g></svg><div class="desglose"><div class="h">Componente</div><div class="h">antes → después</div><div class="h">máx</div><div class="k">Ventaja medida en backtest honesto</div><div class="v ">20 → 20</div><div class="d">/ 20</div><div class="k">Costo real medido en el bróker</div><div class="v ">5 → 5</div><div class="d">/ 15</div><div class="k">Estructura de cartera definida por medición</div><div class="v ">10 → 10</div><div class="d">/ 10</div><div class="k">Robustez de parámetros (meseta)</div><div class="v ">0 → 0</div><div class="d">/ 10</div><div class="k">Sharpe del sistema (0,3 → 5 · 0,5 → 10 · 0,75 → 15 · 1,0 → 20)</div><div class="v up">5 → 7</div><div class="d">/ 20</div><div class="k">Le gana a la tasa libre de riesgo</div><div class="v ">0 → 0</div><div class="d">/ 5</div><div class="k">Fidelidad de ejecución en demo</div><div class="v ">0 → 0</div><div class="d">/ 10</div><div class="k">Operación real con tres meses de seguimiento</div><div class="v ">0 → 0</div><div class="d">/ 10</div></div></div>
+<section class="col" style="padding-top:.5rem">
+  <div class="nota"><div class="h">Lectura honesta del avance</div>
+    <p>Dos puntos parecen poco para el primer experimento que sube el Sharpe. Es que el Sharpe subió de 0,33 a 0,39, y la escala del estándar le da 10 puntos recién en 0,50. Para llegar ahí con la fórmula de este experimento hace falta un tercer activo con ρ bajo 0,3 respecto de los dos que hay, o bajar el costo real. Ninguna de las dos cosas se consigue con más backtest sobre estos datos.</p>
+  </div>
+</section>
+
+<section class="col">
+  <div class="bloque">Bloque 4</div>
+  <h2>Pasos a seguir</h2>
+  <p class="lede">El sistema cambió de forma. Antes de agregarle más, hay que asegurar lo que ya tiene.</p>
+</section>
+<div class="pasos">
+  <div class="paso"><div class="n">1</div><div><h4>EXP 14 · Meseta de parámetros, ahora sobre los dos activos</h4>
+    <p>La configuración más elegida (Donchian 55 · 3×ATR · 2:1 · EMA 200) tiene que estar en una meseta en BTC y en ETH. Si la ventaja de ETH vive en un solo valor de un solo parámetro, la descorrelación de hoy es un accidente. 81 combinaciones por activo, walk-forward, M3.</p>
+    <div class="meta">Nada nuevo · una hora de cómputo</div></div></div>
+  <div class="paso"><div class="n">2</div><div><h4>EXP 15 · Salida por señal opuesta, sobre la cartera mixta</h4>
+    <p>Dos parámetros menos, medidos sobre X33¼. Importa más ahora porque hay dos activos y el swap de ETH pesa más si la tenencia se alarga.</p>
+    <div class="meta">Modificar la salida del motor · medio día</div></div></div>
+  <div class="paso"><div class="n">3</div><div><h4>Verificar el swap y el spread de ETH en Capitaria</h4>
+    <p>Es el único supuesto nuevo de este experimento y está declarado. Se verifica con el mismo método del EXP 9: la fórmula del bundle, otro instrumento y la prueba de absurdo. Lo puede hacer Rod desde el panel del bróker en diez minutos.</p>
+    <div class="meta">Necesita la sesión de Capitaria abierta · diez minutos</div></div></div>
+  <div class="paso"><div class="n">4</div><div><h4>Un tercer activo que no sea cripto</h4>
+    <p>El método se transfirió a ETH sin ajustes. La fórmula dice que el siguiente salto de Sharpe viene de un activo con ρ bajo 0,3 respecto de BTC y ETH a la vez: oro, un índice o un par de divisas del mismo bróker. Se elige por costo por 1R, no por intuición, con el método del EXP 9.</p>
+    <div class="meta">Velas desde el navegador y costo medido antes de correr · un día · después del EXP 15</div></div></div>
+  <div class="paso"><div class="n">5</div><div><h4>EXP 10 · Paper trading, con la cartera mixta</h4>
+    <p>La compuerta no cambió, pero ahora se abre sobre X33¼: seis instancias, 7.0 operaciones al mes. Con esa frecuencia, 20 operaciones de validación toman 3 meses.</p>
+    <div class="meta">Necesita acceso a la API de Capitaria · pendiente</div></div></div>
+</div>
+
+</div>
+</div>
 /* ===== e1a ===== */
 <script>
 
@@ -7674,6 +7987,10 @@ tbody tr.pas td{color:var(--faint); font-style:italic}
 
 </script>
 /* ===== e12a ===== */
+<script>
+
+</script>
+/* ===== e13a ===== */
 <script>
 
 </script>
